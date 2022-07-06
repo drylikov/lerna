@@ -1,0 +1,43 @@
+{
+  "name": "@lerna/conventional-commits",
+  "version": "3.10.0",
+  "description": "Lerna's internal interface to conventional-changelog and friends",
+  "keywords": [
+    "lerna",
+    "core"
+  ],
+  "homepage": "https://github.com/lerna/lerna",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Stockman",
+    "url": "https://github.com/evocateur"
+  },
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 6.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lerna/lerna.git"
+  },
+  "scripts": {
+    "test": "echo \"Run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@lerna/validation-error": "file:../validation-error",
+    "conventional-changelog-angular": "^5.0.2",
+    "conventional-changelog-core": "^3.1.5",
+    "conventional-recommended-bump": "^4.0.4",
+    "fs-extra": "^7.0.0",
+    "get-stream": "^4.0.0",
+    "libnpm": "^2.0.1",
+    "semver": "^5.5.0"
+  }
+}

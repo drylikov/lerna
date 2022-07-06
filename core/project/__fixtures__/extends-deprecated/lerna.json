@@ -1,0 +1,10 @@
+{
+  "extends": "./recursive.json",
+  "commands": {
+    "bootstrap": {
+      "hoist": true
+    }
+  },
+  "npmTag": "next",
+  "version": "1.0.0"
+}

@@ -1,0 +1,58 @@
+{
+  "name": "@lerna/version",
+  "version": "3.10.5",
+  "description": "Bump version of packages changed since the last release",
+  "keywords": [
+    "lerna",
+    "command"
+  ],
+  "homepage": "https://github.com/lerna/lerna",
+  "license": "MIT",
+  "author": {
+    "name": "Daniel Stockman",
+    "url": "https://github.com/evocateur"
+  },
+  "files": [
+    "command.js",
+    "index.js",
+    "lib",
+    "!lib/__mocks__"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 6.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lerna/lerna.git"
+  },
+  "scripts": {
+    "test": "echo \"Run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@lerna/batch-packages": "file:../../utils/batch-packages",
+    "@lerna/check-working-tree": "file:../../utils/check-working-tree",
+    "@lerna/child-process": "file:../../core/child-process",
+    "@lerna/collect-updates": "file:../../utils/collect-updates",
+    "@lerna/command": "file:../../core/command",
+    "@lerna/conventional-commits": "file:../../core/conventional-commits",
+    "@lerna/output": "file:../../utils/output",
+    "@lerna/prompt": "file:../../core/prompt",
+    "@lerna/run-lifecycle": "file:../../utils/run-lifecycle",
+    "@lerna/validation-error": "file:../../core/validation-error",
+    "chalk": "^2.3.1",
+    "dedent": "^0.7.0",
+    "libnpm": "^2.0.1",
+    "minimatch": "^3.0.4",
+    "p-map": "^1.2.0",
+    "p-pipe": "^1.2.0",
+    "p-reduce": "^1.0.0",
+    "p-waterfall": "^1.0.0",
+    "semver": "^5.5.0",
+    "slash": "^1.0.0",
+    "temp-write": "^3.4.0"
+  }
+}
